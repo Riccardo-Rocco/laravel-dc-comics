@@ -21,4 +21,18 @@ class ComicController extends Controller
         $comic = Comic::find($id);
         return view('comics.show', compact('comic'));
     }
+
+
+
+    public function edit(Comic $comic)
+    {
+        return view('comics.edit', compact('comic'));
+    }
+
+    public function search(Request $request)
+    {
+        
+    }
+    
+
 }
